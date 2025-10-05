@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://<your-user>.github.io/noorteaeg-site/</loc><lastmod>2025-10-05</lastmod></url>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://noorteaeg.ee/</loc>
+    <lastmod>2025-10-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://noorteaeg.ee/projects</loc>
+    <lastmod>2025-10-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://noorteaeg.ee/gallery</loc>
+    <lastmod>2025-10-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://noorteaeg.ee/contacts</loc>
+    <lastmod>2025-10-05</lastmod>
+  </url>
+
 </urlset>
