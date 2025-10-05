@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTÜ Noorteaeg — Время молодежи</title>
+  <link rel="icon" href="assets/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+<header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <img src="assets/noorteaeg_logo.png" alt="Noorteaeg logo" class="w-9 h-9 rounded">
+      <span class="font-semibold">MTÜ Noorteaeg</span>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#about" class="hover:text-blue-600" data-i18n="nav_about">О нас</a>
+      <a href="#projects" class="hover:text-blue-600" data-i18n="nav_projects">Проекты</a>
+      <a href="#events" class="hover:text-blue-600" data-i18n="nav_events">События</a>
+      <a href="#gallery" class="hover:text-blue-600" data-i18n="nav_gallery">Галерея</a>
+      <a href="#partners" class="hover:text-blue-600" data-i18n="nav_partners">Партнёры</a>
+      <a href="#contact" class="hover:text-blue-600" data-i18n="nav_contact">Контакты</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button id="lang-ru" class="px-2 py-1 rounded border text-xs" aria-pressed="true">RU</button>
+      <button id="lang-et" class="px-2 py-1 rounded border text-xs" aria-pressed="false">ET</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="bg-gradient-to-br from-blue-600 to-sky-500 text-white">
+    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight" data-i18n="hero_title">Время молодежи</h1>
+        <p class="mt-4 text-lg opacity-95" data-i18n="hero_sub">Делаем Нарва‑Йыэсуу и Ида‑Вирумаа местом, где молодёжь остаётся, учится и создаёт события.</p>
+        <div class="mt-8 flex gap-3">
+          <a href="#events" class="px-5 py-3 bg-white text-blue-700 rounded-xl font-semibold shadow hover:shadow-md transition" data-i18n="cta_events">Ближайшие события</a>
+          <a href="#volunteer" class="px-5 py-3 bg-black/20 rounded-xl font-semibold hover:bg-black/30 transition" data-i18n="cta_volunteer">Стать волонтёром</a>
+        </div>
+      </div>
+      <div class="bg-white/10 rounded-3xl p-6 flex items-center justify-center">
+        <img src="assets/noorteaeg_logo_transparent.png" alt="Логотип Noorteaeg" class="w-full h-full max-h-96 object-contain lb-single">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl font-bold" data-i18n="about_title">О нас</h2>
+        <p class="mt-4" data-i18n="about_text">
+          MTÜ Noorteaeg — молодёжная организация из Нарва-Йыэсуу, созданная для того, чтобы молодые люди могли действовать, создавать проекты и менять среду вокруг себя.
+        </p>
+        <div class="mt-6 grid md:grid-cols-2 gap-4 text-sm">
+          <div class="bg-white rounded-xl p-4 shadow">
+            <h3 class="font-semibold" data-i18n="mission_title">Миссия</h3>
+            <p class="mt-1" data-i18n="mission_text">Дать молодёжи возможность проявить себя, развиваться и влиять на жизнь города и региона.</p>
+          </div>
+          <div class="bg-white rounded-xl p-4 shadow">
+            <h3 class="font-semibold" data-i18n="goal_title">Цель</h3>
+            <p class="mt-1" data-i18n="goal_text">Сделать Нарва-Йыэсуу и весь регион местом, где молодёжь остаётся, учится и создаёт будущее.</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow">
+        <h3 class="text-xl font-semibold" data-i18n="values_title">Что мы делаем</h3>
+        <ul class="list-disc pl-5 mt-3 space-y-1 text-sm">
+          <li><span data-i18n="do_1">Организуем городские праздники и семейные мероприятия</span></li>
+          <li><span data-i18n="do_2">Проводим мастер‑классы, лекции и эко‑инициативы</span></li>
+          <li><span data-i18n="do_3">Поддерживаем молодёжные идеи и проекты</span></li>
+          <li><span data-i18n="do_4">Сотрудничаем с городом, школами и партнёрами в Ида‑Вирумаа</span></li>
+          <li><span data-i18n="do_5">Организуем молодежные поездки по Эстонии и за границу</span></li>
+        </ul>
+        <div class="mt-6 grid grid-cols-3 gap-4 items-center">
+          <img src="assets/photo7.jpg" alt="Михаил Гладышев" class="rounded-lg object-cover h-24 w-full lb-single">
+          <div class="col-span-2 text-sm">
+            <h4 class="font-semibold" data-i18n="team_title">Команда</h4>
+            <p class="mt-1" data-i18n="team_text">MTÜ Noorteaeg основана молодым жителем Нарва-Йыэсуу Михаилом Гладышевым. Вместе с ним проекты развивают активные ребята, которые верят, что молодёжь может менять свой город к лучшему.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold" data-i18n="projects_title">Проекты</h2>
+      <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="p-4 bg-gray-50 rounded-xl text-center">
+          <img src="assets/photo2.jpg" alt="Lastekaitsepäev" class="rounded-lg img-card w-full lb-single" loading="lazy">
+          <h3 class="mt-3 font-semibold" data-i18n="pr1_title">Lastekaitsepäev Narva-Jõesuu linnas</h3>
+        </article>
+        <article class="p-4 bg-gray-50 rounded-xl text-center">
+          <img src="assets/photo1.jpg" alt="Keskkonnapäev Sinimäel" class="rounded-lg img-card w-full lb-single" loading="lazy">
+          <h3 class="mt-3 font-semibold" data-i18n="pr2_title">Laste ja noorte Keskkonnapäev Sinimäel</h3>
+        </article>
+        <article class="p-4 bg-gray-50 rounded-xl text-center">
+          <img src="assets/photo3.jpg" alt="Roheline Start" class="rounded-lg img-card w-full lb-single" loading="lazy">
+          <h3 class="mt-3 font-semibold" data-i18n="pr3_title">Roheline Start – perepäev Narva-Jõesuus</h3>
+        </article>
+        <article class="p-4 bg-gray-50 rounded-xl text-center">
+          <img src="assets/photo5.jpg" alt="Rohelised üritused koolides" class="rounded-lg img-card w-full lb-single" loading="lazy">
+          <h3 class="mt-3 font-semibold" data-i18n="pr4_title">Rohelised kogukonnaüritused Ida-Virumaa koolides</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold" data-i18n="events_title">Ближайшие события</h2>
+    <ul id="events-list" class="mt-6 grid md:grid-cols-2 gap-6"></ul>
+  </section>
+
+  <section id="gallery" class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold" data-i18n="gallery_title">Галерея</h2>
+      <div id="gallery-grid" class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3">
+        <img src="assets/photo1.jpg" alt="G1" class="rounded-xl img-card w-full lb-gallery" loading="lazy">
+        <img src="assets/photo2.jpg" alt="G2" class="rounded-xl img-card w-full lb-gallery" loading="lazy">
+        <img src="assets/photo3.jpg" alt="G3" class="rounded-xl img-card w-full lb-gallery" loading="lazy">
+        <img src="assets/photo4.jpg" alt="G4" class="rounded-xl img-card w-full lb-gallery" loading="lazy">
+        <img src="assets/photo5.jpg" alt="G5" class="rounded-xl img-card w-full lb-gallery" loading="lazy">
+        <img src="assets/photo6.jpg" alt="G6" class="rounded-xl img-card w-full lb-gallery" loading="lazy">
+      </div>
+      <button id="open-gallery" class="mt-6 px-4 py-2 bg-blue-600 text-white rounded-lg no-print">Открыть галерею</button>
+    </div>
+  </section>
+
+  <section id="partners" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold" data-i18n="partners_title">Партнёры</h2>
+    <div class="mt-6 flex flex-wrap items-center gap-10">
+      <img src="assets/partner_narva_joesuu.png" alt="Narva‑Jõesuu Linn" class="h-16 lb-single">
+      <img src="assets/partner_tulevik_plus.png" alt="MTÜ Tulevik+" class="h-24 lb-single">
+      <img src="assets/partner_ida_sudamete.jpg" alt="Ida Südamete Soojus" class="h-24 lb-single">
+    </div>
+  </section>
+
+  <section id="volunteer" class="bg-white border-t">
+    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-bold" data-i18n="vol_title">Стать волонтёром</h2>
+        <p class="mt-2" data-i18n="vol_text">Заполните форму. Сообщение отправится на нашу почту.</p>
+        <form id="vol-form" class="mt-6 space-y-3">
+          <label class="block text-sm">
+            <span data-i18n="form_name">Имя</span>
+            <input name="name" required class="mt-1 w-full rounded-lg border px-3 py-2">
+          </label>
+          <label class="block text-sm">
+            <span data-i18n="form_email">Email</span>
+            <input type="email" name="email" required class="mt-1 w-full rounded-lg border px-3 py-2">
+          </label>
+          <label class="block text-sm">
+            <span data-i18n="form_msg">Сообщение</span>
+            <textarea name="msg" rows="3" class="mt-1 w-full rounded-lg border px-3 py-2"></textarea>
+          </label>
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-lg" data-i18n="form_send">Отправить</button>
+        </form>
+      </div>
+      <div id="contact" class="md:border-l md:pl-8">
+        <h2 class="text-3xl font-bold" data-i18n="contact_title">Контакты</h2>
+        <ul class="mt-3 text-sm">
+          <li><strong>Email:</strong> <a href="mailto:noorteaeg@gmail.com" class="text-blue-600">noorteaeg@gmail.com</a></li>
+          <li><strong data-i18n="phone_label">Телефон:</strong> <a href="tel:+37255511177" class="text-blue-600">+372 5551 1177</a></li>
+        </ul>
+        <div class="mt-8">
+          <h3 class="text-xl font-semibold">Ищи нас</h3>
+          <div class="mt-3 flex items-center gap-4">
+            <a href="https://www.instagram.com/noorteaeg/" target="_blank" class="flex items-center gap-2 text-blue-600">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zM17.8 6.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/noorteaeg" target="_blank" class="flex items-center gap-2 text-blue-600">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.07C22 6.49 17.52 2 11.93 2S2 6.49 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.02H7.9V12.1h2.54V9.9c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.86h2.78l-.44 2.88h-2.34V22c4.78-.75 8.44-4.91 8.44-9.93z"/></svg>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between">
+    <p>© <span id="year"></span> MTÜ Noorteaeg</p>
+    <a href="#top" class="no-print hover:underline" data-i18n="back_to_top">Наверх</a>
+  </div>
+</footer>
+
+<div id="lightbox" class="lightbox-backdrop" aria-hidden="true">
+  <span class="lightbox-close" id="lb-close">×</span>
+  <span class="lightbox-nav lightbox-prev hidden" id="lb-prev">‹</span>
+  <img class="lightbox-img" id="lb-img" alt="">
+  <span class="lightbox-nav lightbox-next hidden" id="lb-next">›</span>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const dict = {ru:{nav_about:"О нас",nav_projects:"Проекты",nav_events:"События",nav_gallery:"Галерея",nav_partners:"Партнёры",nav_contact:"Контакты",hero_title:"Время молодежи",hero_sub:"Делаем Нарва‑Йыэсуу и Ида‑Вирумаа местом, где молодёжь остаётся, учится и создаёт события.",cta_events:"Ближайшие события",cta_volunteer:"Стать волонтёром",about_title:"О нас",about_text:"MTÜ Noorteaeg — молодёжная организация из Нарва-Йыэсуу, созданная для того, чтобы молодые люди могли действовать, создавать проекты и менять среду вокруг себя.",mission_title:"Миссия",mission_text:"Дать молодёжи возможность проявить себя, развиваться и влиять на жизнь города и региона.",goal_title:"Цель",goal_text:"Сделать Нарва-Йыэсуу и весь регион местом, где молодёжь остаётся, учится и создаёт будущее.",values_title:"Что мы делаем",do_1:"Организуем городские праздники и семейные мероприятия",do_2:"Проводим мастер‑классы, лекции и эко‑инициативы",do_3:"Поддерживаем молодёжные идеи и проекты",do_4:"Сотрудничаем с городом, школами и партнёрами в Ида‑Вирумаа",do_5:"Организуем молодежные поездки по Эстонии и за границу",team_title:"Команда",team_text:"MTÜ Noorteaeg основана молодым жителем Нарва-Йыэсуу Михаилом Гладышевым. Вместе с ним проекты развивают активные ребята, которые верят, что молодёжь может менять свой город к лучшему.",projects_title:"Проекты",events_title:"Ближайшие события",gallery_title:"Галерея",partners_title:"Партнёры",vol_title:"Стать волонтёром",vol_text:"Заполните форму. Сообщение отправится на нашу почту.",form_name:"Имя",form_email:"Email",form_msg:"Сообщение",form_send:"Отправить",contact_title:"Контакты",phone_label:"Телефон:",back_to_top:"Наверх"},et:{nav_about:"Meist",nav_projects:"Projektid",nav_events:"Sündmused",nav_gallery:"Galerii",nav_partners:"Partnerid",nav_contact:"Kontakt",hero_title:"Noorteaeg",hero_sub:"Teeme Narva‑Jõesuu ja Ida‑Virumaa paigaks, kuhu noored jäävad, õpivad ja loovad sündmusi.",cta_events:"Lähiaja sündmused",cta_volunteer:"Tule vabatahtlikuks",about_title:"Meist",about_text:"MTÜ Noorteaeg on Narva‑Jõesuust pärit noorteühendus, mis annab noortele võimaluse tegutseda, luua projekte ja muuta ümbritsevat.",mission_title:"Missioon",mission_text:"Anda noortele võimalus avalduda, areneda ja mõjutada linna ning regiooni elu.",goal_title:"Eesmärk",goal_text:"Muuta Narva‑Jõesuu ja kogu piirkond paigaks, kus noored jäävad, õpivad ja loovad tulevikku.",values_title:"Mida teeme",do_1:"Korraldame linna- ja pereüritusi",do_2:"Viime läbi töötube, loenguid ja ökoinitsiatiive",do_3:"Toetame noorte ideid ja projekte",do_4:"Teeme koostööd linna, koolide ja partneritega Ida‑Virumaal",do_5:"Korraldame noortereise Eestis ja välismaal",team_title:"Meeskond",team_text:"MTÜ Noorteaeg rajas Narva‑Jõesuu noor Mikhail Gladõšev. Koos temaga veavad projekte aktiivsed noored, kes usuvad, et noored saavad oma linna paremaks muuta.",projects_title:"Projektid",events_title:"Lähiaja sündmused",gallery_title:"Galerii",partners_title:"Partnerid",vol_title:"Tule vabatahtlikuks",vol_text:"Täida vorm. Saadame teate meie e-postile.",form_name:"Nimi",form_email:"Email",form_msg:"Sõnum",form_send:"Saada",contact_title:"Kontakt",phone_label:"Telefon:",back_to_top:"Üles"}};
+
+  function setLang(lang){
+    document.documentElement.lang = lang==='et'?'et':'ru';
+    document.querySelectorAll('[data-i18n]').forEach(el=>{
+      const key=el.getAttribute('data-i18n'); if(dict[lang][key]!==undefined) el.textContent=dict[lang][key];
+    });
+    document.getElementById('lang-ru').setAttribute('aria-pressed', lang==='ru');
+    document.getElementById('lang-et').setAttribute('aria-pressed', lang==='et');
+    localStorage.setItem('lang', lang);
+    renderEvents();
+  }
+  document.getElementById('lang-ru').addEventListener('click',()=>setLang('ru'));
+  document.getElementById('lang-et').addEventListener('click',()=>setLang('et'));
+  setLang(localStorage.getItem('lang')||'ru');
+
+  async function renderEvents(){
+    try{
+      const res=await fetch('events.json'); const data=await res.json();
+      const list=document.getElementById('events-list'); list.innerHTML='';
+      data.upcoming.forEach(e=>{
+        const title=(document.documentElement.lang==='et'?e.title_et:e.title_ru)||'';
+        const li=document.createElement('li'); li.className='p-4 bg-white rounded-xl shadow';
+        li.innerHTML=`<h3 class='font-semibold mb-3'>${e.date} — ${title}</h3>${e.poster?`<img src='${e.poster}' class='poster rounded-md lb-single'>`:''}`;
+        list.appendChild(li);
+      });
+    }catch(err){console.error(err)}
+  }
+  renderEvents();
+
+  // Lightbox: gallery-only navigation
+  const lb=document.getElementById('lightbox'), lbImg=document.getElementById('lb-img'), prevBtn=document.getElementById('lb-prev'), nextBtn=document.getElementById('lb-next'), closeBtn=document.getElementById('lb-close');
+  let gallery=[], idx=0;
+  function openLightbox(src, group){ if(group==='gallery'){ gallery=[...document.querySelectorAll('img.lb-gallery')].map(i=>i.src); prevBtn.classList.remove('hidden'); nextBtn.classList.remove('hidden'); } else { gallery=[src]; prevBtn.classList.add('hidden'); nextBtn.classList.add('hidden'); } idx=gallery.indexOf(src); if(idx<0) idx=0; lbImg.src=gallery[idx]; lb.classList.add('open'); lb.setAttribute('aria-hidden','false'); }
+  function show(i){ idx=(i+gallery.length)%gallery.length; lbImg.src=gallery[idx]; }
+  document.body.addEventListener('click',e=>{ const t=e.target; if(t.matches('img.lb-gallery')) openLightbox(t.src,'gallery'); if(t.matches('img.lb-single')) openLightbox(t.src,'single'); });
+  closeBtn.onclick=()=>{ lb.classList.remove('open'); lb.setAttribute('aria-hidden','true'); };
+  prevBtn.onclick=()=>show(idx-1); nextBtn.onclick=()=>show(idx+1);
+  lb.addEventListener('click',e=>{ if(e.target===lb) closeBtn.onclick(); });
+  document.addEventListener('keydown',e=>{ if(!lb.classList.contains('open')) return; if(e.key==='Escape') closeBtn.onclick(); if(e.key==='ArrowLeft'&&!prevBtn.classList.contains('hidden')) prevBtn.onclick(); if(e.key==='ArrowRight'&&!nextBtn.classList.contains('hidden')) nextBtn.onclick(); });
+
+  // Open gallery button loads more hidden images then opens viewer
+  const moreImages=['assets/photo7.jpg','assets/photo8.jpg'];
+  document.getElementById('open-gallery').addEventListener('click',()=>{
+    const grid=document.getElementById('gallery-grid'); moreImages.forEach(src=>{ const img=document.createElement('img'); img.src=src; img.className='rounded-xl img-card w-full lb-gallery hidden'; grid.appendChild(img); });
+    const first=document.querySelector('img.lb-gallery'); if(first) openLightbox(first.src,'gallery');
+  });
+
+  // Volunteer form: mailto
+  document.getElementById('vol-form').addEventListener('submit',ev=>{ ev.preventDefault(); const fd=new FormData(ev.target); const subject=encodeURIComponent('Volunteer / Vabatahtlik — '+(fd.get('name')||'')); const body=encodeURIComponent(`Name: ${fd.get('name')||''}\nEmail: ${fd.get('email')||''}\n\nMessage:\n${fd.get('msg')||''}`); window.location.href=`mailto:noorteaeg@gmail.com?subject=${subject}&body=${body}`; });
+</script>
+</body>
+</html>
